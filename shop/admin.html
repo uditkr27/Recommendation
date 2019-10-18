@@ -1,0 +1,31 @@
+<html>
+<body>
+<form method="post" name="form" action="fdjk.php">
+
+<input type="text" name="psd" required>
+<input type="text" name="rpsd" required>
+
+<input type="submit" onclick="fun()" >
+</form>
+
+
+<script>
+
+function fun(){
+if(document.form.psd.value!=document.form.rpsd.value){
+
+window.alert("jhbjh");
+document.getElementById("psd").reset();
+document.getElementById("rpsd").reset();
+}
+}
+
+</script>
+
+<!--<input name="somename"
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "6"
+ />-->
+ </body>
+ </html>
